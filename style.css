@@ -3,6 +3,8 @@
     padding: 0;
     user-select: none;
     list-style: none;
+    background-attachment: fixed;
+    
     
     
 }
@@ -158,5 +160,7 @@ section{
     background-size:cover;
     height: 100vh; 
 transition: all .5s;
+
+overflow: hidden;
 }
 
