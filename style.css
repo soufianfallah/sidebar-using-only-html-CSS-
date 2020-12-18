@@ -3,7 +3,7 @@
     padding: 0;
     user-select: none;
     list-style: none;
-    background-attachment: fixed;
+    
     
     
     
@@ -16,6 +16,7 @@
     height: 100%;
     background: rgba(6, 5, 36, 0);
     transition: all .5s;
+    background-attachment: fixed;
 }
 /*logo*/
 .sidebar header{
