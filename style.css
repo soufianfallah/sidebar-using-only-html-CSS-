@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    list-style: none;
+    
+    
+}
+/*hide sidebar to the left */
+.sidebar{
+    position: fixed;
+    left: -120px;
+    width: 140px;
+    height: 100%;
+    background: rgba(6, 5, 36, 0);
+    transition: all .5s;
+}
+/*logo*/
+.sidebar header{
+    font-size: 69px;
+    color: rgba(255, 255, 255, 0.397);
+    text-align: center;
+    line-height:70px;
+    background:  rgba(0, 0, 0, 0);
+    
+}
+.sidebar ul {
+    position: relative;
+    top: 80px;
+}
+.sidebar ul a{
+    display: block;
+    height: 100%;
+    width: 65%;
+    line-height: 65px;
+    font-size: 60px;
+    color: rgba(127, 172, 231, 0.397);
+    padding-left: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    transition: all .5s;
+    
+}
+
+/*ul a:hover{
+        font-size: 70px;
+        color: rgb(83, 221, 255);
+        padding-left: 120px;
+}*/
+
+ul  #ps:hover {
+    font-size: 70px;
+        color: rgb(255, 255, 255);
+        padding-left: 120px;
+        transition: all .5s;
+        background:rgb(8, 10, 133);
+        border-radius: 0px 100px 100px 0px;
+
+}
+ul  #xb:hover {
+    font-size: 70px;
+        color: white;
+        padding-left: 120px;
+        transition: all .5s;
+        background: rgb(16, 124, 16);
+        border-radius: 0px 100px 100px 0px;
+}
+ul  #stm:hover {
+    font-size: 70px;
+        color: rgb(8, 7, 63);
+        padding-left: 120px;
+        transition: all .5s;
+        background: #ffffff;
+        border-radius: 0px 100px 100px 0px;
+}
+ul  #mic:hover {
+    font-size: 70px;
+        
+        padding-left: 120px;
+        transition: all .5s;
+      
+}
+ul  #tr:hover {
+    font-size: 70px;
+        color: rgb(255, 251, 0);
+        padding-left: 120px;
+        transition: all .5s;
+       
+}
+ul  #shr:hover {
+    font-size: 70px;
+        
+        padding-left: 120px;
+        transition: all .5s;
+      
+}
+
+#check{
+    display: none;
+}
+label #btn , label #cancel{
+    position: absolute;
+    cursor: pointer;
+}
+label #btn{
+    left: 30px;
+    top: 30px;
+    font-size: 30px;
+    color: rgb(240, 232, 232);
+    padding: 6px 12px;
+    transition: all .5s;
+    border: 1px solid #ffffff;
+    border-radius: 15px;
+}
+label #btn:hover{
+    color: rgb(134, 236, 228);
+    font-size: 45px;
+    border: 1px solid rgb(134, 236, 228);
+}
+label #cancel{
+    z-index: 1111;
+    left: -120px;
+    top: 100px;
+    font-size: 30px;
+    color: rgba(255, 255, 255, 0.445);
+    padding: 4px 9px; 
+    border: 1px solid #ffffff;
+    border-radius: 15px;
+}
+label #cancel:hover{
+    color: rgb(125, 250, 237);
+    border: 1px solid  rgb(125, 250, 237);
+    
+}
+/*checked trick*/
+#check:checked~.sidebar{
+    left: 0;
+}
+#check:checked~label #btn{
+    left: 120px;
+    opacity: 0;
+    pointer-events: none;
+}
+#check:checked~label #cancel{
+    left: 120px;
+}
+/*end checked trick*/
+
+/* use this to move image with the side bar*/
+/*#check:checked~section{
+    margin-left: 120px;
+}*/
+
+/*background*/
+section{
+    background:#14182c;
+    background-position: center;
+    background-size:cover;
+    height: 100vh; 
+transition: all .5s;
+}
+
