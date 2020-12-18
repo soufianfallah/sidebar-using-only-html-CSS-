@@ -11,12 +11,13 @@
 /*hide sidebar to the left */
 .sidebar{
     position: fixed;
-    left: -120px;
+    left: -140px;
     width: 140px;
     height: 100%;
     background: rgba(6, 5, 36, 0);
     transition: all .5s;
     background-attachment: fixed;
+    overflow: hidden 15px  ;
 }
 /*logo*/
 .sidebar header{
@@ -140,7 +141,7 @@ label #cancel:hover{
     left: 0;
 }
 #check:checked~label #btn{
-    left: 120px;
+    left: 140px;
     opacity: 0;
     pointer-events: none;
 }
